@@ -1,18 +1,18 @@
-***Settings***
-library  SeleniumLibrary
+*** Settings ***
+Library  SeleniumLibrary
 Resource  ../Resources/Keywords.robot
-resource  ../resources/Variables.robot
+Resource  ../resources/Variables.robot
 
 *** Test Cases ***
-User Load Page
+User load page
     Load Page
     Close all Browsers
-User Try A Different Login Scenarious
+User try a different login scenarious
     [Template]  Login Scenarious
-    &{Correct_Login_And_Password}
-    &{Correct_Login}
-    &{Correct_Password}
-User Search The Cars
+    &{correct login and password}
+    &{&{correct login}}
+    &{correct password}
+User search the cars
     Load Page
     Search The Car
     Select One Of The Resuls
