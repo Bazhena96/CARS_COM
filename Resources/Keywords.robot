@@ -23,7 +23,7 @@ Sign In
     Wait And Click  css=.cui-button
 Login Scenarious
     [Arguments]  &{credential}
-    Load Page And Maximize Browser Window
+    Load Page
     Sign In  &{credential}
     Close All browsers
 Search The Car
@@ -36,4 +36,4 @@ Search The Car
     Wait And Click  css=label.as-fuel-type-label:nth-child(4)
     Wait And Click  css=.cui-button
 Select One Of The Results
-    Wait And Click  css=#listing-806122707 > div:nth-child(1) > div:nth-child(2) > ul:nth-child(7)
+    Wait And Click  css=#listing-819374526 > div:nth-child(1) > div:nth-child(2)
