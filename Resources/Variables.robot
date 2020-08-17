@@ -1,6 +1,4 @@
-***Variables***
-&{Correct_Login_And_Password}  Email=bazhenkak@gmail.com  Password=CHANGEchange13&
-&{Correct_Login}  Email=bazhenkak@gmail.com  Password=123456  
-&{Correct_Password}  Email=Admin@gmail.com  Password=CHANGEchange13&
-
- 
+*** Variables ***
+&{correct login and password}  Email=bazhenkak@gmail.com  Password=CHANGEchange13&
+&{correct login}  Email=bazhenkak@gmail.com  Password=123456
+&{correct password}  Email=Admin@gmail.com  Password=CHANGEchange13&
