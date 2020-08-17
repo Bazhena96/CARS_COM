@@ -9,6 +9,9 @@ Wait And Click
     [Arguments]  ${locator}
     Wait Until Page Contains Element  ${locator}
     Click Element  ${locator}
+Load Page And Maximize Browser Window
+    Load Page
+    Maximize Browser Window
 Sign In
     [Arguments]  &{credential}
     Wait And Click  css=._2m4tT
@@ -18,9 +21,9 @@ Sign In
     Wait And Click  css=input.input:nth-child(4)
     Input Text  css=input.input:nth-child(4)  ${credential}[Password]
     Wait And Click  css=.cui-button
-Login scenarious
+Login Scenarious
     [Arguments]  &{credential}
-    Load Page 
+    Load Page And Maximize Browser Window
     Sign In  &{credential}
     Close All browsers
 Search The Car
@@ -32,5 +35,5 @@ Search The Car
     Wait And Click  css=div.col-group:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
     Wait And Click  css=label.as-fuel-type-label:nth-child(4)
     Wait And Click  css=.cui-button
-Select One Of The Resuls
+Select One Of The Results
     Wait And Click  css=#listing-806122707 > div:nth-child(1) > div:nth-child(2) > ul:nth-child(7)
