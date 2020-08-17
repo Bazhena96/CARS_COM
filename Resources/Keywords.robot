@@ -1,28 +1,28 @@
-***Settings***
-library  SeleniumLibrary
+*** Settings ***
+Library  SeleniumLibrary
 Resource  Variables.robot
-***Keywords***
+*** Keywords ***
 Load Page
     Open Browser  https://www.cars.com  chrome  executable_path=/usr/local/Caskroom/chromedriver/83.0.4103.39/chromedriver
     Set Browser Implicit Wait  5
 Sign In
-    [Arguments]  &{Credentions}
+    [Arguments]  &{credential}
     Wait Until Page Contains Element  css=._2m4tT
     Click Element  css=._2m4tT
     Wait Until Page Contains Element  css=.cui-tab-labels > li:nth-child(1)
     Click Element  css=.cui-tab-labels > li:nth-child(1)
     Wait Until Page Contains Element  css=input.input:nth-child(2)
     Click Element  css=input.input:nth-child(2)
-    Input Text  css=input.input:nth-child(2)  ${Credentions}[Email]
+    Input Text  css=input.input:nth-child(2)  ${credential}[Email]
     Wait Until Page Contains Element  css=input.input:nth-child(4)
     Click Element  css=input.input:nth-child(4)
-    Input Text  css=input.input:nth-child(4)  ${Credentions}[Password]
+    Input Text  css=input.input:nth-child(4)  ${credential}[Password]
     Wait Until Page Contains Element  css=.cui-button
     Click Element  css=.cui-button
 Login scenarious
-    [Arguments]  &{Credentions}
+    [Arguments]  &{credential}
     Load Page 
-    Sign In  &{Credentions}
+    Sign In  &{credential}
     Close All browsers
 Search The Car
     Wait Until Page Contains Element  css=._2imB5 > a:nth-child(1)
