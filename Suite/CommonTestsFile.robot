@@ -5,7 +5,7 @@ Resource  ../resources/Variables.robot
 
 *** Test Cases ***
 User load page
-    Load Page
+    Load Page And Maximize Browser Window
     Close all Browsers
 User try a different login scenarious
     [Template]  Login Scenarious
@@ -13,7 +13,7 @@ User try a different login scenarious
     &{&{correct login}}
     &{correct password}
 User search the cars
-    Load Page
+    Load Page And Maximize Browser Window
     Search The Car
     Select One Of The Resuls
     Close All Browsers
