@@ -10,10 +10,10 @@ User load page
 User try a different login scenarious
     [Template]  Login Scenarious
     &{correct login and password}
-    &{&{correct login}}
+    &{correct login}
     &{correct password}
 User search the cars
     Load Page And Maximize Browser Window
     Search The Car
-    Select One Of The Resuls
+    Select One Of The Results
     Close All Browsers
