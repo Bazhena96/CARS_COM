@@ -2,7 +2,6 @@
 Library  SeleniumLibrary
 Resource  ../Resources/Keywords.robot
 Resource  ../resources/Variables.robot
-
 *** Test Cases ***
 User load page
     Load Page And Maximize Browser Window
