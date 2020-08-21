@@ -13,18 +13,18 @@ Load Page And Maximize Browser Window
     Load Page
     Maximize Browser Window
 Sign In
-    [Arguments]  &{credential}
+    [Arguments]  &{credentials}
     Wait And Click  css=._2m4tT
     Wait And Click  css=.cui-tab-labels > li:nth-child(1)
     Wait And Click  css=input.input:nth-child(2)
-    Input Text  css=input.input:nth-child(2)  ${credential}[Email]
+    Input Text  css=input.input:nth-child(2)  ${credentials}[Email]
     Wait And Click  css=input.input:nth-child(4)
-    Input Text  css=input.input:nth-child(4)  ${credential}[Password]
+    Input Text  css=input.input:nth-child(4)  ${credentials}[Password]
     Wait And Click  css=.cui-button
 Login Scenarious
-    [Arguments]  &{credential}
+    [Arguments]  &{credentials}
     Load Page
-    Sign In  &{credential}
+    Sign In  &{credentials}
     Close All browsers
 Search The Car
     Wait And Click  css=._2imB5 > a:nth-child(1)
