@@ -8,9 +8,9 @@ User load page
     Close all Browsers
 User try a different login scenarious
     [Template]  Login Scenarious
-    &{Correct login and password}
-    &{Correct login}
-    &{Correct password}
+    &{CORRECT LOGIN AND PASSWORD}
+    &{CORRECT LOGIN}
+    &{CORRECT PASSWORD}
 User search the cars
     Load Page And Maximize Browser Window
     Search The Car
